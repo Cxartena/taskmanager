@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Questrial', sans-serif;
+    line-height: 1;
+}
+
+body {
+    height: 100vh;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    background: linear-gradient(to right, #8859ff, white 30%, white 70%, #8859ff);
+}
+
+h1 {
+    font-size: 50px;
+    color: #7549e4;
+    text-align: center;
+    margin-top: -10px;
+}
+
+h1:hover {
+    cursor: default;
+}
+
+div.inputs {
+    width: 40vw;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    height: 40px;
+
+    input,
+    button {
+        height: 100%;
+        border-radius: 10px;
+        outline: none;
+        border: 1px solid black;
+        background: #efefef;
+    }
+
+    input {
+        width: 80%;
+        padding: 0px 15px;
+    }
+
+    button {
+        width: 20%;
+    }
+
+    button:hover {
+        cursor: pointer;
+    }
+}
+
+div.tasks {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    max-width: 40vw;
+    min-width: 40vw;
+    width: 40vw;
+    padding: 5px;
+
+    li {
+        font-size: 20px;
+        display: flex;
+        flex: row;
+    }
+
+    li:hover {
+        cursor: default;
+    }
+
+    button {
+        background: #efefef;
+        margin: 0px 5px;
+        height: 20px;
+        border-radius: 2px;
+        padding: 0px 5px;
+    }
+
+    button:hover {
+        cursor: pointer;
+    }
+}
+
+#deleteAll {
+    position: fixed;
+    left: 50%;
+    bottom: 20px;
+    transform: translateX(-50%);
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+#deleteAll:hover {
+    cursor: pointer;
+}
